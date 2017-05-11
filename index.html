@@ -252,22 +252,13 @@
         	  //upcoming_sis_layer.setMap(null);
 
 			  //current_fulltime_layer = new google.maps.KmlLayer({url: 'https://docs.google.com/uc?export=download&id=0B7ae91JhWDOFY0lvSENHQlg2MG8',    map: map });
-			  
+
 			  competitor_layer = new geoXML3.parser({
 					map: map,
 					zoom: true,
 					singleInfoWindow: true,
 					markerOptions: {
 						icon: "http://maps.google.com/mapfiles/ms/icons/red-dot.png"
-					},
-					createMarker: function (placemark, doc) {
-						  //get the marker from the built-in createMarker-function
-						  var marker=geoXML3.instances[0].createMarker(placemark, doc);
-						  //modify the content
-						  if(marker.infoWindow){
-							marker.infoWindowOptions.content=placemark.description;
-						  }
-						  return marker;
 					}
               });
 
