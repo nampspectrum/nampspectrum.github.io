@@ -118,7 +118,7 @@ table {
     border-width:thin;    
 }
 #navigation {
-	max-width: 16%;
+	max-width: 15%;
     float:right;
     overflow-y:scroll;
     height:100vh;
